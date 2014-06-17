@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="MainApp">
+    <head>
+        <meta charset="utf-8">
+
+        <title></title>
+
+        {% block library %}
+            <script type="text/javascript" src="{% static 'main/library/angular/angular.min.js' %}"></script>
+        {% endblock %}
+    </head>
+    <body>
+    {% block content %}{% endblock %}
+</body>
+    {% block scripts %}
+        <script type="text/javascript" charset="utf-8" src="{% static 'main/scripts/application.js' %}"></script>
+    {% endblock %}
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "django_angular_tests",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.2.18",
+    "angular-mocks": "1.2.18"
+  }
+}
